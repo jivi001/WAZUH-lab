@@ -160,21 +160,6 @@ Stop-Service WazuhSvc
 C:\Program Files (x86)\ossec-agent\ossec.log
 ```
 
----
-
-# Screenshots
-
-Include the following screenshots in this section:
-
-1. Wazuh Agent Download Page
-2. MSI Installer Wizard
-3. Installation Progress
-4. Installation Completed
-5. Wazuh Agent Running in Windows Services
-6. PowerShell Service Verification
-
----
-
 # Key Takeaways
 
 - The Wazuh Agent collects endpoint telemetry and securely forwards it to the Wazuh Manager.
@@ -187,6 +172,6 @@ Include the following screenshots in this section:
 
 # References
 
-- Wazuh Official Documentation
-- Microsoft Windows Installer Documentation
-- Microsoft PowerShell Documentation
+- [Wazuh Official Documentation](https://documentation.wazuh.com/)
+- [Microsoft Windows Installer Documentation](https://learn.microsoft.com/windows/win32/msi/)
+- [Microsoft PowerShell Documentation](https://learn.microsoft.com/powershell/)

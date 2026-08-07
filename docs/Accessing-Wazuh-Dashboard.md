@@ -86,20 +86,6 @@ Log in using the administrator credentials generated during the Wazuh installati
 
 > **Important:** Save these credentials when they are displayed during installation, as they are required to access the dashboard.
 
----
-
-## Step 5 – Verify Successful Access
-
-After logging in, verify that:
-
-- The dashboard loads successfully.
-- The Overview page is displayed.
-- The Wazuh Manager status is healthy.
-- The Wazuh Indexer is connected.
-- No critical service errors are displayed.
-
----
-
 ## Expected Outcome
 
 After completing these steps:
@@ -167,19 +153,6 @@ sudo ss -tulnp | grep 443
 curl -k https://localhost
 ```
 
----
-
-# Screenshots
-
-Include the following screenshots for documentation:
-
-1. Ubuntu Server IP Address
-2. Browser Security Warning
-3. Wazuh Login Page
-4. Successful Dashboard Login
-5. Wazuh Overview Dashboard
-
----
 
 # Key Takeaways
 
@@ -193,6 +166,6 @@ Include the following screenshots for documentation:
 
 # References
 
-- Wazuh Official Documentation
-- Ubuntu Server Documentation
-- Linux `ip` Command Manual
+- [Wazuh Official Documentation](https://documentation.wazuh.com/)
+- [Ubuntu Server Documentation](https://ubuntu.com/server/docs)
+- [Linux `ip` Command Manual](https://man7.org/linux/man-pages/man8/ip.8.html)
