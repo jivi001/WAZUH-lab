@@ -42,7 +42,7 @@ Enter the following information:
 | Field | Example |
 |--------|---------|
 | Agent Name | WindowsHost |
-| IP Address | Leave blank (or specify a static IP if required) |
+| IP Address |  IP of the host System |
 | Agent ID | Automatically assigned |
 
 After entering the information, confirm the registration.
@@ -197,22 +197,6 @@ Restart-Service WazuhSvc
 Get-Service WazuhSvc
 ```
 
----
-
-# Screenshots
-
-Include the following screenshots:
-
-1. Running `manage_agents`
-2. Adding a New Agent
-3. Extracting the Authentication Key
-4. Wazuh Agent Manager (Windows)
-5. Importing the Authentication Key
-6. Configuring the Manager IP Address
-7. Restarting the Wazuh Agent Service
-8. Agent Listed as **Active** in the Wazuh Dashboard
-
----
 
 # Key Takeaways
 
