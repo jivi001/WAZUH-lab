@@ -42,7 +42,7 @@ Enter the following information:
 | Field | Example |
 |--------|---------|
 | Agent Name | WindowsHost |
-| IP Address |  IP of the host System |
+| IP Address | `any` (Recommended for DHCP/lab) or static IP |
 | Agent ID | Automatically assigned |
 
 After entering the information, confirm the registration.
@@ -75,9 +75,17 @@ Copy the entire key. It will be imported into the Windows Agent.
 
 On the Windows system:
 
-- Open the **Start Menu**.
-- Search for **Wazuh Agent Manager**.
-- Launch the application with administrator privileges.
+- Open the **Start Menu** and look for the **OSSEC** program group, then launch **Manage Agent**.
+- Or run the configuration utility directly from `cmd` or PowerShell as Administrator:
+  ```powershell
+  & "C:\Program Files (x86)\ossec-agent\win32ui.exe"
+  ```
+
+> **Tip (Command-Line Registration Alternative):**
+> Instead of using the GUI, you can enroll the agent directly via the command line using `agent-auth`:
+> ```powershell
+> & "C:\Program Files (x86)\ossec-agent\agent-auth.exe" -m <ubuntu-server-ip>
+> ```
 
 ---
 

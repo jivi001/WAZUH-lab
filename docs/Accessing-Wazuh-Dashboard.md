@@ -82,9 +82,16 @@ Select:
 
 ## Step 4 – Log In to the Dashboard
 
-Log in using the administrator credentials generated during the Wazuh installation.
+Log in using the administrator credentials:
+- **Default Username:** `admin`
+- **Password:** The password generated during installation.
+  - If using the **Wazuh Installation Assistant** (`wazuh-install.sh`), check `wazuh-passwords.txt` located in your installation directory:
+    ```bash
+    sudo tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
+    ```
+  - If installed via individual packages, use the administrator password configured in the Indexer security setup (`internal_users.yml`).
 
-> **Important:** Save these credentials when they are displayed during installation, as they are required to access the dashboard.
+> **Important:** Save these credentials securely, as they are required to access the dashboard and manage the cluster.
 
 ## Expected Outcome
 

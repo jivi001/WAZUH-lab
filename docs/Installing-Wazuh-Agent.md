@@ -28,13 +28,19 @@ Before installing the Wazuh Agent, ensure that:
 
 ## Step 1 – Download the Wazuh Agent
 
-Download the latest Wazuh Agent MSI package from the official Wazuh documentation.
+Download the Wazuh Agent MSI package from the official Wazuh repository:
+- **Direct Download:** [https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.0-1.msi](https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.0-1.msi)
 
-Download:
+Alternatively, download directly via PowerShell:
 
-**Wazuh Agent for Windows (MSI Installer)**
+```powershell
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.0-1.msi -OutFile wazuh-agent.msi
+```
 
-Save the installer to the Windows host.
+> **Tip (Unattended Install):** You can also install and configure the Manager address in one automated command:
+> ```powershell
+> .\wazuh-agent.msi /q WAZUH_MANAGER='<ubuntu-server-ip>'
+> ```
 
 ---
 
